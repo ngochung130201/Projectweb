@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+          1.document.createElement
+          2.document.body.appendchild
+          3.console.dir
+          4.innerText,id,className,style
+      -->
+    <!-- <h1 id="heading">Hung dtr</h1> -->
+    <div id="root"></div>
+    <script type="text/babel">
+      //   const h1 = document.querySelector("#heading");
+      //   console.log(h1);
+      //tao ra element
+      // const root = document.getElementById("root");
+      // const h1 = document.createElement("h1");
+      // h1.innerText = "hello huynh ngoc hung";
+      // h1.id = "heading";
+      // h1.className = "heading";
+      // console.log(h1);
+      // root.appendChild(h1);
+      // <ul>
+      //     <li>java</li>
+      //     <li>python</li>
+      // </ul>
+      const arrs = [
+        {
+          name: "hung",
+        },
+        {
+          lastname: "huynh",
+          name: "mit",
+        },
+        {
+          age: 20,
+          name: "dtr",
+        },
+      ];
+      const jsx = (
+        // <ul>
+        //   {arrs.map((arr) => (
+        //     // <li>{arr.name}</li>
+        //     // <li>{arr.age}</li>
+        //     <li>{arr.name}</li>
+        //   ))}
+        // </ul>
+        <React.Fragment>
+          <h1>hung dtr</h1>
+          <h2>cntt1</h2>
+        </React.Fragment>
+      );
+      ReactDOM.render(jsx, root);
+      //JSX javascript XML
+      //JSX khong phai la html va can co thu vien babel
+      // 1type react.creatElement : string funcition class
+      // wrap --header -> header component
+      // conter,footer -> conten-> compontent footer->componnent
+      // 2 bieu dien don gian voi JSX
+    </script>
+    <div id="app"></div>
+    <script type="text/babel">
+      function Heading() {
+        return <div class="heading">hhhhhh</div>;
+      }
+      const app = (
+        <div className="wrapper">
+          <div className="heading"></div>
+          <div className="content"></div>
+          <div className="footer"></div>
+        </div>
+      );
+      ReactDOM.render(app, document.getElementById("app"));
+    </script>
+  </body>
+</html>

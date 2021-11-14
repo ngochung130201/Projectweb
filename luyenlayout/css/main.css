@@ -1,0 +1,230 @@
+.header {
+  background-color: #ffff;
+  width: 100%;
+  height: 55px;
+  position: fixed;
+  top: 0;
+  box-shadow: 1px 1px #f1f1f1;
+  z-index: 1;
+}
+.header .header_nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 17px;
+}
+.header_nav .header_nav-item {
+  margin-left: 40px;
+}
+.header_nav-item .item-link {
+  text-decoration: none;
+  color: var(--color-black);
+  padding: 8px 12px;
+  letter-spacing: var(--spacing);
+  font-weight: var(--font-weight);
+}
+.header_nav-item .item-link:hover {
+  background-color: var(--hover);
+  padding: 8px 12px;
+}
+.linkspan {
+}
+.header .header_nav-list {
+  /* line-height: 55px; */
+}
+.header_nav-list .list-items {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-right: 40px;
+}
+.list-items .list-item-1 {
+  /* margin-left: 30px; */
+}
+.list-item-1 .list-link {
+  padding: 8px 12px;
+  text-decoration: none;
+  color: var(--color-black);
+  letter-spacing: var(--spacing);
+}
+.list-item-1 .list-link:hover {
+  background-color: var(--hover);
+}
+.slider {
+  position: relative;
+  margin-bottom: 40px;
+}
+.slider  .img-slider {
+  width: 100%;
+}
+.slider  .slider-p {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(50%, 50%);
+  color: #fff;
+  font-size: 36px;
+}
+.slider-p .silder-p-span {
+  background-color: #333;
+  padding: 5px;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+.container-span {
+  margin-bottom: 50px;
+  margin-left: 40px;
+}
+.container-title {
+    display:inline-block;
+    border-bottom: 1px solid #f1f1f1;
+    width: 96%;
+    padding-bottom: 20px;
+    color:#333;
+    
+}
+.container-list {
+  position: relative;
+  margin-bottom: 15px;
+  /* padding-left: 20px; */
+}
+.container-list-span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 16px;
+  background-color: #000000;
+  color: #ffff;
+  margin-left: -30px;
+}
+
+.list-img {
+  width: 300px;
+  height: 200px;
+  margin-left: -30px;
+}
+.about {
+    margin-left: 40px;
+}
+.about-span {
+    margin-left: 3px;
+}
+.about-title {
+   text-align: justify;
+   margin-right: 40px;
+   line-height: 1.5;
+}
+.about-member {
+    display:flex !important;
+    justify-content:space-evenly;
+    margin-left: -30px;
+    margin-top: 40px;
+    
+}
+.member-item{
+    width: 300px;
+    height:400px;
+    /* line-height: 1.5; */
+}
+.member-img{
+    margin-bottom: 10px;    
+    max-width: 400px;
+    height:200px;
+}
+.member-name{
+display:block;
+}
+.member-information{
+    display:block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+.member-p{
+    /* text-align: center; */
+    /* word-wrap: wrap; */
+    margin-bottom: 10px;
+}
+.member-button{
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    background-color: #f1f1f1;
+    display:inline-block;
+    color:#000000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+.member-button:hover {
+    background-color: #ccc;
+}
+.contact {
+    margin-left: 40px;
+}
+.contact-span {
+    margin-top: 40px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+.contact-p{
+    margin-bottom: 10px;
+}
+.contact-input{
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 3;
+    
+}
+.contact-name{
+    border:1px solid #ccc;
+    height:40px;
+    margin-bottom: 15px;
+    padding-left: 8px;
+    margin-right: 20px;
+}
+.input-button {
+    padding:8px 18px;
+    background-color: #333;
+    display:inline-block;
+    color:#ffff;
+    text-decoration: none;
+}
+.input-button:hover {
+    background-color: #ccc;
+}
+.map {
+    margin-top: 40px;
+    margin-right: 20px;
+}
+.map .map-silde {
+    object-fit: cover;
+    width: 100%;
+}
+.footer {
+    margin-top: 10px;
+    height:100px;
+    background-color: #000000;
+    color:#fff;
+}
+.footer-span {
+   position: relative;
+   top:50%;
+   left:45%;
+   transform:translate(50%,50%);
+   
+   /* display: block;
+   text-align: center;
+   margin-top: 30px; */
+
+}
+.footer-link {
+    color: #fff;
+}

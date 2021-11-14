@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReactJS</title>
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+  </head>
+  <body>
+    <h1>Add react to website</h1>
+    <div id="root"></div>
+    <!-- 
+        1.Gihub,NPMJS,UNPKG
+        2.Add react to website
+        3.Dfficial docs
+        // react.createElement() -> React element
+        2. so sanh voi document.createElement-> DOM element
+        3.thay doi id,class,style
+        4.them text,HTML
+        5.tao 
+        <h1 title="hello" class="heading">hello hung</h1>
+        6.tao 
+        <ul>
+            <li>java</li>
+            <li>python</li>
+        </ul>
+        7.tao 
+        <div class="post-item">
+            <h2 title="hoc react tai f8">Hoc reactJS </h2>
+        <p>dadsdasda</p>
+    -->
+    <script>
+      //DOM
+      const h1DOM = document.createElement("h1");
+      h1DOM.title = "hello";
+      h1DOM.className = "heading";
+      h1DOM.innerText = "hello";
+      document.body.appendChild(h1DOM);
+      //React React.createElement(type,pros,chidlren,n)
+      const h1React = React.createElement(
+        "h1",
+        {
+          title: "hello",
+          className: "heading",
+        },
+        " hello"
+      );
+      console.dir(h1DOM);
+      console.log(h1React);
+      //ul li
+      const ulDOM = document.createElement("ul");
+      const liDOM = document.createElement("li");
+      liDOM.innerText = "java";
+      const li2DOM = document.createElement("li");
+      li2DOM.innerText = "python";
+      ulDOM.appendChild(liDOM);
+      ulDOM.appendChild(li2DOM);
+      document.body.appendChild(ulDOM);
+      //ul li react
+      const ulReact = React.createElement(
+        "ul",
+        null,
+        React.createElement("li", null, "java"),
+        React.createElement("li", null, "python")
+      );
+      const ulReact1 = React.c;
+      console.log(ulReact);
+      // <div class="post-item">
+      //     <h2 title="hoc react tai f8">Hoc reactJS </h2>
+      // <p>dadsdasda</p>
+      //   const divDom = document.createElement("div");
+      //   divDom.className = "post-item";
+      //   const h2 = document.createElement("h2");
+      //   h2.title = "hoc react tai f8";
+      //   h2.innerText = "Hoc reactjs";
+      //   const p = document.createElement("p");
+      //   p.innerText = "dassdsad";
+      //   divDom.appendChild(h2);
+      //   divDom.appendChild(p);
+      //   document.body.appendChild(divDom);
+      //react
+      const divreact = React.createElement(
+        "div",
+        {
+          className: "post-item",
+        },
+        React.createElement(
+          "h2",
+          {
+            title: "hoc react tai f8",
+          },
+          "hoc reactjs"
+        ),
+        React.createElement("p", null),
+        "dasssds"
+      );
+      //react DOM render ra giao dien nguoi dung
+      //1 tao sao phai su dung reactDom
+      const root = document.getElementById("#root");
+      //react dom de render UI
+      ReactDom.render(divreact, root);
+    </script>
+  </body>
+</html>

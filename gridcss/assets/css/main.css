@@ -1,0 +1,217 @@
+header {
+  height: 110px;
+  background-image: linear-gradient(to right, #f95830, #f63);
+  width: 100%;
+  margin-bottom: 30px;
+  position: fixed;
+  z-index: 0;
+  top: 0;
+}
+.header .header__navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: var(--white-color);
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+.header__navbar .header__navbar-list {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  list-style: none;
+}
+.header__navbar-list .header__navbar-item {
+  margin-left: 20px;
+}
+.header__navbar-item .header__navbar-item-link {
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.gachchan {
+  border-right: 1px solid rgb(252, 207, 202);
+  padding-right: 5px;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+.header-link:hover {
+  opacity: 0.8;
+}
+
+.word {
+  margin-left: 2px;
+  padding: 2px;
+  /* background-color: #fff;
+   border-radius: 50%; */
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.header__navbar2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.header__navbar2 .header-logo {
+  /* margin-left: 30px; */
+  /* padding-right: 40px; */
+}
+.header-logo .header__logo-item {
+  display: inline;
+  color: var(--white-color);
+  font-weight: 500;
+  cursor: pointer;
+}
+.logo-link {
+  font-size: 25px;
+  text-decoration: none;
+  color: var(--white-color);
+}
+.header-logo .ti-shopping-cart {
+  font-size: 40px;
+  /* background-color:#fff */
+  cursor: pointer;
+  color: var(--white-color);
+}
+.header__nav-link {
+  color: var(--white-color);
+  text-decoration: none;
+}
+.header__navbar2-input {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__input {
+  height: 40px;
+  width: 850px;
+  border: none;
+  padding-left: 12px;
+  outline: none;
+}
+.header__navbar2-input .nav-button {
+  border: none;
+  height: 36px;
+  padding: 0 14px;
+  margin-top: -10px;
+  margin-left: -45px;
+  align-self: center;
+  background-image: linear-gradient(to right, #f95830, #f63);
+  cursor: pointer;
+  color: var(--white-color);
+  display: inline-block;
+}
+.nav-button:hover {
+  background-image: linear-gradient(to right, red, #f63);
+  /* background-color: #f63; */
+}
+.header__navbar2-cart .ti-shopping-cart-full {
+}
+.header__navbar2-cart {
+  font-size: 23px;
+  color: var(--white-color);
+  padding: 8px 10px;
+  margin-top: 10px;
+}
+.header__navbar2-cart .ti-shopping-cart-full {
+  margin-left: -8rem;
+}
+/* header-footer */
+.header-list {
+  display: flex;
+  justify-content: center;
+  margin-left: -36em;
+  margin-top: -4px;
+}
+.header-list .header-list-item {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 13px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+.container-main {
+  display: grid;
+  width: 1200px;
+  grid-template-columns: 800px 400px;
+  grid-gap: 10px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.container__silde {
+}
+.silde_img {
+  max-height: 123px;
+  width: 390px;
+  object-fit: cover;
+}
+.silde_img-big {
+  width: 800px;
+  height: 250px;
+  object-fit: cover;
+}
+.container-list {
+  /* margin-top: 40px; */
+  max-width: 1200px;
+  /* padding-left: 25px; */
+  margin: 0 auto;
+}
+.container-list .list-items {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 10px 12px;
+}
+.list-items .item-logo {
+  font-size: 13px;
+  text-align: center;
+  margin: 20px;
+}
+.item-logo .logo-span {
+  margin-top: 30px;
+  display: block;
+}
+.item-logo .ti-camera {
+  padding: 20px 30px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+.sile {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.list-container {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  /* height: 300px; */
+  background-color: #fff;
+  /* justify-content: space-around; */
+
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.list-container .list-product {
+  border-right: 0.55px solid #fff;
+}
+.list-product .product-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.product-img .product-span {
+  font-size: 13px;
+}
+.list-product {
+  /* display: flex;
+    flex-direction: column; */
+}
